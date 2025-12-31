@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "Lora-trainer"
+version = "0.1.0"
+description = "Unsloth를 이용한 Supporter AI LoRA 학습 프로젝트"
+authors = ["Kim Wonhyeok <nnovatecoder@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+unsloth = { git = "https://github.com/unslothai/unsloth.git" }
+torch = "^2.2.0"
+transformers = "^4.45.0"
+datasets = "^2.19.0"
+peft = "^0.12.0"
+trl = "^0.8.1"
+bitsandbytes = "^0.43.0"
+accelerate = "^0.28.0"
+sentencepiece = "^0.2.0"
+tensorboard = "^2.16.2"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
